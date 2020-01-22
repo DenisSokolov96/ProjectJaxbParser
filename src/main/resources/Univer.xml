@@ -1,0 +1,11 @@
+<den:University xmlns:den="http://denis.rsatu.ru">
+  <den:Groups>
+    <!--Zero or more repetitions:-->
+    <den:Group>
+      <!--Optional:-->
+      <den:name>string</den:name>
+      <!--Optional:-->
+      <den:val>100</den:val>
+    </den:Group>
+  </den:Groups>
+</den:University>

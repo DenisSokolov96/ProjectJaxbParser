@@ -1,0 +1,6 @@
+2020-01-22 20:44:28 ERROR MainClass:35 - unexpected element (uri:"http://denis.rsatu.ru", local:"University"). Expected elements are (none)
+2020-01-22 20:46:16 INFO  MainClass:32 - Ok
+2020-01-22 20:48:03 ERROR MainClass:35 - unexpected element (uri:"http://denis.rsatu.ru", local:"University"). Expected elements are (none)
+2020-01-22 20:52:30 ERROR MainClass:35 - unexpected element (uri:"http://denis.rsatu.ru", local:"University"). Expected elements are (none)
+2020-01-22 20:57:44 ERROR MainClass:35 - unexpected element (uri:"http://denis.rsatu.ru", local:"University"). Expected elements are (none)
+2020-01-22 20:59:49 ERROR MainClass:35 - unexpected element (uri:"http://denis.rsatu.ru", local:"University"). Expected elements are (none)
