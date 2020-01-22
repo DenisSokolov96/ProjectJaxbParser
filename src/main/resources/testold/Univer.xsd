@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           targetNamespace="http://denis.rsatu.ru/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:den="http://denis.rsatu.ru/">
+  <xs:element name="university" type="den:universityType"/>
+  <xs:complexType name="groupType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+        <xs:attribute type="xs:string" name="val" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="groupsType">
+    <xs:sequence>
+      <xs:element type="den:groupType" name="group" maxOccurs="unbounded" minOccurs="0" xmlns:den="http://denis.rsatu.ru/"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="departmentType">
+    <xs:sequence>
+      <xs:element type="den:groupsType" name="groups" xmlns:den="http://denis.rsatu.ru/"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="departmentsType">
+    <xs:sequence>
+      <xs:element type="den:departmentType" name="department" maxOccurs="unbounded" minOccurs="0" xmlns:den="http://denis.rsatu.ru/"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="facultyType">
+    <xs:sequence>
+      <xs:element type="den:departmentsType" name="departments" xmlns:den="http://denis.rsatu.ru/"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="facultysType">
+    <xs:sequence>
+      <xs:element type="den:facultyType" name="faculty" maxOccurs="unbounded" minOccurs="0" xmlns:den="http://denis.rsatu.ru/"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="universityType">
+    <xs:sequence>
+      <xs:element type="den:facultysType" name="facultys" xmlns:den="http://denis.rsatu.ru/"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+  </xs:complexType>
+</xs:schema>

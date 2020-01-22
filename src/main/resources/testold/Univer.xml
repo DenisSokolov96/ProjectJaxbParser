@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+    <un:university name = "РГАТУ"
+                xmlns:un="http://denis.rsatu.ru/"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://denis.rsatu.ru/ Univer.xsd">
+        <un:facultys>
+            <un:faculty name = "ФАД">
+                <un:departments>
+                    <un:department name="Кафедра авиационных двигателей">
+                        <un:groups>
+                            <un:group name="кадгр1" val="15"/>
+                            <un:group name="кадгр2" val="17"/>
+                            <un:group name="кадгр3" val="16"/>
+                        </un:groups>
+                    </un:department>
+                    <un:department name="Кафедра материаловедения, литья, сварки">
+                        <un:groups>
+                            <un:group name="кмгр1" val="25"/>
+                            <un:group name="кмгр2" val="27"/>
+                            <un:group name="кмгр3" val="26"/>
+                        </un:groups>
+                    </un:department>
+                    <un:department name="Кафедра общей и технической физики">
+                        <un:groups>
+                            <un:group name="кфгр1" val="20"/>
+                            <un:group name="кфгр2" val="21"/>
+                            <un:group name="кфгр3" val="23"/>
+                        </un:groups>
+                    </un:department>
+                    <un:department name="Кафедра графики">
+                        <un:groups>
+                            <un:group name="кггр1" val="30"/>
+                            <un:group name="кггр2" val="31"/>
+                            <un:group name="кггр3" val="33"/>
+                            <un:group name="кггр4" val="30"/>
+                        </un:groups>
+                    </un:department>
+                </un:departments>
+            </un:faculty>
+            <un:faculty name = "ФАТ">
+                <un:departments>
+                    <un:department name="Кафедра технологии авиационных двигателей и общего машиностроения">
+                        <un:groups>
+                            <un:group name="ктадгр1" val="30"/>
+                            <un:group name="ктадгр2" val="31"/>
+                            <un:group name="ктадгр3" val="33"/>
+                        </un:groups>
+                    </un:department>
+                    <un:department name="Кафедра мехатронных систем и процессов формообразования имени С.С. Силина">
+                        <un:groups>
+                            <un:group name="кмсгр1" val="15"/>
+                            <un:group name="кмсгр2" val="10"/>
+                            <un:group name="кмсгр3" val="12"/>
+                        </un:groups>
+                    </un:department>
+                    <un:department name="Кафедра теоретической механики и сопротивления материалов">
+                        <un:groups>
+                            <un:group name="ктмгр1" val="15"/>
+                            <un:group name="ктмгр2" val="20"/>
+                        </un:groups>
+                    </un:department>
+                    <un:department name="Кафедра основы конструирования машин">
+                        <un:groups>
+                            <un:group name="ккмгр1" val="25"/>
+                            <un:group name="ккмгр2" val="23"/>
+                            <un:group name="ккмгр3" val="20"/>
+                        </un:groups>
+                    </un:department>
+                </un:departments>
+            </un:faculty>
+            <un:faculty name = "ФРЭИ">
+                <un:departments>
+                    <un:department name="Кафедра вычислительных систем">
+                        <un:groups>
+                            <un:group name="квсгр1" val="15"/>
+                            <un:group name="квсгр2" val="13"/>
+                            <un:group name="квсгр3" val="10"/>
+                        </un:groups>
+                    </un:department>
+                    <un:department name="Кафедра радиоэлектронных и телекоммуникационных систем">
+                        <un:groups>
+                            <un:group name="кртсгр1" val="16"/>
+                            <un:group name="кртсгр2" val="15"/>
+                            <un:group name="кртсгр3" val="15"/>
+                        </un:groups>
+                    </un:department>
+                    <un:department name="Кафедра электротехники и промышленной электроники">
+                         <un:groups>
+                            <un:group name="кэпсгр1" val="14"/>
+                            <un:group name="кэпсгр2" val="12"/>
+                            <un:group name="кэпсгр3" val="10"/>
+                        </un:groups>
+                    </un:department>
+                    <un:department name="Кафедра высшей математики">
+                        <un:groups>
+                            <un:group name="квмсгр1" val="17"/>
+                            <un:group name="квмсгр2" val="11"/>
+                            <un:group name="квмсгр3" val="14"/>
+                        </un:groups>
+                    </un:department>
+                </un:departments>
+            </un:faculty>
+        </un:facultys>
+    </un:university>

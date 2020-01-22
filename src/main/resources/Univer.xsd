@@ -6,46 +6,92 @@
            xmlns:tns="http://denis.rsatu.ru">
     <xs:element name="University" type="tns:UniversityType"/>
 
-    <xs:complexType name="GroupType">
+    <xs:complexType name="GroupType1">
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="name" type="tns:name" minOccurs="0"/>
-            <xs:element name="val" type="tns:val" minOccurs="0"/>
+            <xs:element name="name" type="tns:name1" minOccurs="0"/>
+            <xs:element name="val" type="tns:val1" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="GroupsType">
+    <xs:complexType name="GroupType2">
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="tns:GroupType" name="Group" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element name="name" type="tns:name2" minOccurs="0"/>
+            <xs:element name="val" type="tns:val2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GroupType3">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="name" type="tns:name3" minOccurs="0"/>
+            <xs:element name="val" type="tns:val3" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
-   <!-- <xs:complexType name="FaculType">
+    <xs:complexType name="GroupsType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element type="tns:GroupType1" name="Group1" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="tns:GroupType1" name="Group12" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="tns:GroupType2" name="Group2" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="tns:GroupType3" name="Group3" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="FacultyType1">
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:element type="tns:GroupsType" name="Groups" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="FacultsType">
+    <xs:complexType name="FacultyType2">
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="tns:FaculType" name="Facult" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="tns:GroupsType" name="Groups" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
-    </xs:complexType>-->
-
-   <xs:complexType name="UniversityType">
+    </xs:complexType>
+    <xs:complexType name="FacultyType3">
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element type="tns:GroupsType" name="Groups"/>
+            <xs:element type="tns:GroupsType" name="Groups" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="FacultysType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element type="tns:FacultyType1" name="Faculty1" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="tns:FacultyType2" name="Faculty2" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element type="tns:FacultyType3" name="Faculty3" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
 
-    <xs:simpleType name="val">
-        <xs:restriction base="xs:integer">
-        </xs:restriction>
-    </xs:simpleType>
+   <xs:complexType name="UniversityType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element type="tns:FacultysType" name="Facultys"/>
+        </xs:sequence>
+    </xs:complexType>
 
 
-    <xs:simpleType name="name">
+    <xs:simpleType name="name1">
         <xs:restriction base="xs:string">
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="val1">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="name2">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="val2">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="name3">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="val3">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+
 
 
 
